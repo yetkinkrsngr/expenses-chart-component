@@ -1,0 +1,134 @@
+:root {
+  --Softred: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+
+  --Darkbrown: hsl(25, 47%, 15%);
+  --Mediumbrown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Verypaleorange: hsl(33, 100%, 98%);
+}
+/* app */
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Cream);
+}
+/* card */
+.card {
+  width: 90%;
+}
+/* header */
+.headerBox {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--Softred);
+}
+.leftHeader {
+  color: var(--Verypaleorange);
+  font-size: 0.8rem;
+}
+
+/* bottom */
+.bottomCard {
+  margin-top: 15px;
+  border-radius: 15px;
+  padding: 15px;
+
+  background-color: var(--Verypaleorange);
+}
+.topSideBottom {
+  margin-bottom: 30px;
+}
+.middleSideTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -20px;
+}
+.middleSideTotal .total {
+  background-color: var(--Darkbrown);
+  color: var(--Verypaleorange);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  visibility: hidden;
+}
+.weekdaysDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  height: 150px;
+}
+
+.week {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 30px;
+}
+.chart {
+  width: 40px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: var(--Softred);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.chart:hover {
+  background-color: var(--Cyan);
+}
+.weekDays {
+  color: var(--Mediumbrown);
+  font-size: 0.8rem;
+}
+.chart40 {
+  height: 40%;
+}
+.chart60 {
+  height: 60%;
+}
+.chart80 {
+  height: 80%;
+}
+.chart100 {
+  height: 100%;
+  background-color: var(--Cyan);
+}
+.chart45 {
+  height: 45%;
+}
+.chart85 {
+  height: 85%;
+}
+hr {
+  width: 100%;
+  border: 1px solid var(--Cream);
+  margin: 0;
+}
+/* BottomDetails */
+.bottomSideBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.bottomRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media (min-width: 750px) {
+  .card {
+    width: 600px;
+  }
+}
